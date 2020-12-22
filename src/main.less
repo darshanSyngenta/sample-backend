@@ -1,0 +1,373 @@
+@import '~antd/dist/antd.css';
+@import './antd-reduced';
+@import './config/styles/theme';
+@import './config/styles/base';
+@import './config/styles/antd-overrides';
+
+.continue-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  width: 100% !important;
+  @media (min-width: 768px) and (max-width: 1200px) {
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
+}
+.syngenta-ant-popover-inner-content {
+  padding: 15px;
+}
+.ant-statistic-content {
+  font-weight: 600;
+  font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.products {
+  width: 324px;
+  max-height: 285px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto 0 auto !important;
+  justify-content: flex-start;
+  @media (min-width: 768px) and (max-width: 1200px) {
+    width: auto !important;
+  }
+}
+
+.st-layout {
+  height: 100vh;
+
+  .st-sider {
+    background-color: #2f3031;
+  }
+
+  .st-content {
+    background-color: #f5f8fc;
+    z-index: 1;
+  }
+}
+
+/*Responsive css*/
+@media (max-width: 768px) {
+  .accounts-right-block {
+    display: none;
+  }
+  .accounts-left-block {
+    margin: auto;
+    box-shadow: none !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    min-width: 320px !important;
+    width: 320px !important;
+    height: calc(100vh);
+    overflow: inherit !important;
+    padding-top: 20px !important;
+    .app-language {
+      margin: 10px 0px 10px 0 !important;
+    }
+    .signin-btn {
+      max-width: 100% !important;
+      min-width: 100% !important;
+      position: relative;
+      top: -40px;
+      margin-bottom: 0px !important;
+    }
+    .signin-pwd {
+      margin-bottom: 20px;
+    }
+    .login-form-keep-loggedIn {
+      position: relative;
+      top: -54px;
+    }
+    .header {
+      font-size: 16px !important;
+    }
+    .reset-header {
+      margin-bottom: 12px !important;
+    }
+    .voucher-btns {
+      margin-top: 0px !important;
+    }
+    .account-details {
+      padding: 20px 10px !important;
+    }
+    .account-img {
+      padding-top: 10px !important;
+    }
+    .start-btn {
+      margin-top: 24px !important;
+    }
+
+    .continue-btn {
+      margin-top: 20px !important;
+      width: 100% !important;
+    }
+    .mobile-number {
+      margin-bottom: 20px;
+    }
+  }
+  // Model
+  .syngenta-ant-modal-wrap {
+    display: flex;
+    align-items: flex-end;
+    .syngenta-ant-modal {
+      max-width: 100% !important;
+      width: 100% !important;
+      top: unset;
+      margin: 0;
+      padding: 0;
+      .syngenta-ant-modal-content {
+        border-radius: 0px !important;
+      }
+    }
+  }
+  .terms-conditions {
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    .fQsatj {
+      padding-top: 0 !important;
+      height: auto !important;
+    }
+    .bjMbRe {
+      margin: 0px auto 0px;
+    }
+    .TACPrivacyPolicy {
+      font-size: 16px !important;
+      // margin-bottom: 17px !important;
+    }
+    .agree-privacy {
+      padding: 0 !important;
+      .t-c {
+        flex-direction: column;
+        height: calc(100vh - 220px) !important;
+        .syngenta-ant-card {
+          max-width: 100% !important;
+          width: 100% !important;
+          height: auto !important;
+          margin-right: 0 !important;
+          margin-bottom: 5px;
+          .syngenta-ant-card-body {
+            overflow: hidden !important;
+            border: 0;
+          }
+        }
+        .TACText {
+          width: 100% !important;
+          max-width: 100% !important;
+          font-size: 12px !important;
+        }
+      }
+      .t-c-btns {
+        div {
+          button {
+            left: 0px !important;
+            right: 0px !important;
+          }
+        }
+      }
+    }
+  }
+  .t-c-timeline {
+    .syngenta-ant-timeline {
+      width: calc(100% - 18px);
+      height: 60px;
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      // left: 50px;
+      .timeline-li {
+        width: 100%;
+        background: transparent;
+        margin-bottom: 0 !important;
+        // position: relative;
+        float: left;
+        .syngenta-ant-timeline-item {
+          margin-left: 0 !important;
+          text-align: left;
+          height: 33px;
+          .syngenta-ant-timeline-item-tail {
+            position: absolute;
+            margin-left: 14px;
+            width: calc(100% - 14px);
+            height: 2px !important;
+            background: #e8e8e8;
+          }
+          .syngenta-ant-timeline-item-head {
+            top: 16px !important;
+          }
+          .syngenta-ant-timeline-item-content {
+            top: 30px !important;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            word-break: break-word;
+          }
+        }
+      }
+      .syngenta-ant-timeline-item-last {
+        width: 0px !important;
+        .syngenta-ant-timeline-item {
+          .syngenta-ant-timeline-item-tail {
+            display: none !important;
+          }
+        }
+        .offerFont {
+          width: 0px;
+        }
+      }
+    }
+  }
+  .BNtsP {
+    img {
+      margin-top: 0px !important;
+    }
+    .title {
+      font-size: 16px !important;
+    }
+  }
+  .warning-msg {
+    margin: 0px !important;
+  }
+  .TACContainer {
+    overflow: hidden;
+  }
+
+  .offerFont {
+    width: 70px;
+    font-size: 12px !important;
+    visibility: hidden !important;
+    // width: 97vw !important;
+    &.active {
+      visibility: visible !important;
+      position: absolute;
+      width: calc(100vw - 45px) !important;
+      // width: 100% !important;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      // padding: 0 22px;
+      z-index: 999;
+    }
+    span {
+      &:nth-child(2) {
+        margin-right: 0px !important;
+        margin-top: 5px;
+      }
+    }
+  }
+  /*Tooltip css*/
+  .syngenta-ant-tooltip-placement-rightTop {
+    bottom: calc(100% - 592px);
+    left: 42% !important;
+    top: auto !important;
+    .syngenta-ant-tooltip-arrow {
+      left: 92.5%;
+      top: -13.6px !important;
+      transform: rotate(90deg);
+      &::before {
+        width: 10px;
+        height: 10px;
+        transform: translateX(6.53553391px) rotate(46deg) !important;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .accounts-left-block {
+    min-width: 280px !important;
+    width: 280px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .BNtsP {
+    img {
+      width: 100% !important;
+    }
+  }
+}
+
+/* Portrait and Landscape */
+@media (max-width: 480px) and (min-width: 320px) {
+  .accounts-left-block {
+    box-shadow: none !important;
+    min-width: 100% !important;
+    width: 100% !important;
+    height: calc(100vh);
+    overflow: auto !important;
+    padding: 20px !important;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .syngenta-ant-card-body {
+    h3 {
+      margin: 2px 0 !important;
+    }
+  }
+  // .t-c-timeline {
+  //   .syngenta-ant-timeline {
+  //     width: calc(100% - 18px);
+  //   }
+  // }
+  .syngenta-ant-tooltip-placement-rightTop {
+    left: 34% !important;
+  }
+}
+
+@media (max-width: 660px) and (min-width: 481px) {
+  .syngenta-ant-tooltip-placement-rightTop {
+    left: 40% !important;
+  }
+}
+@media (max-width: 414px) and (min-width: 375px) {
+  .syngenta-ant-tooltip-placement-rightTop {
+    left: 38% !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .accounts-left-block {
+    .login-form-keep-loggedIn {
+      position: relative;
+      top: -74px;
+    }
+    .products {
+      width: 280px !important;
+    }
+  }
+  .syngenta-ant-tooltip-placement-rightTop {
+    left: 27% !important;
+  }
+}
+@media (max-width: 1024px) {
+  .t-c-btns {
+    div {
+      button {
+        left: 0px !important;
+        right: 0px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .accounts-left-block {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .offerFont.mobile {
+    display: flex !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+}
+
+.offerFont.mobile {
+  display: none;
+}

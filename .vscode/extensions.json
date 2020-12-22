@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "ms-vscode.node-debug",
+    "ms-vscode.node-debug2",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "ms-vscode.references-view",
+    "esbenp.prettier-vscode",
+    "akamud.vscode-theme-onedark",
+    "jpoissonnier.vscode-styled-components",
+    "eamodio.gitlens"
+  ]
+}

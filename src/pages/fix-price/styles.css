@@ -1,0 +1,24 @@
+.ml-auto {
+  margin-left: auto;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.price-fix {
+  align-items: center;
+}
+.price-fix P {
+  margin-bottom: 0px;
+}
+.price-tag {
+  color: #00a0be;
+  font-size: 25px;
+  font-weight: 700;
+}
+.trade-time {
+  padding: 10px;
+  background-color: #f3f4f6;
+}

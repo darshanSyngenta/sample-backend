@@ -1,0 +1,125 @@
+version: 2.1
+orbs:
+  aws-s3: circleci/aws-s3@1.0.16
+jobs:
+  phraseapp:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Install phraseapp and sync branch
+          command: |
+            sudo wget -O phrase https://github.com/phrase/phrase-cli/releases/download/2.0.13/phrase_linux_amd64
+            sudo chmod +x phrase
+            sudo cp phrase /usr/local/bin/
+            bash ./scripts/phraseapp_merge_locale.sh ${CIRCLE_BRANCH}
+            echo 'translations synced'
+  build:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/repo
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      - run:
+          name: Create Production build
+          command: |
+            export NODE_ENV=${CIRCLE_BRANCH}
+            NODE_ENV=${CIRCLE_BRANCH} npm install
+            npm run locales-pull-js
+            npm run build
+      - store_artifacts:
+          path: /home/circleci/repo/.npm/_logs
+          destination: logs
+      - save_cache:
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  test:
+    docker:
+      - image: circleci/node:10.13.0-browsers
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Test
+          command: |
+            echo Test build
+
+  deploy:
+    parameters:
+      bucket-suffix:
+        type: string
+    docker:
+      - image: circleci/node:10.13.0-browsers
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/repo
+      - aws-s3/copy:
+          arguments: |
+            --recursive \
+            --include "*"
+          from: ~/repo/build
+          to: s3://cropwise-hedging-fe
+      # - run:
+      #     name: Invalidate CloudFront Cache
+      #     command: |
+      #       CF_DISTRIBUTION="CF_DISTRIBUTION_${CIRCLE_BRANCH^^}"
+      #       aws cloudfront create-invalidation --distribution-id "${!CF_DISTRIBUTION}" --paths "/*"
+
+workflows:
+  version: 2
+  build-test-and-deploy:
+    jobs:
+      # - phraseapp:
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
+      #           - staging
+      #           - qa
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+                - staging
+                - qa
+                - dev
+      # - test:
+      #     requires:
+      #       - build
+      - deploy:
+          bucket-suffix: .${CIRCLE_BRANCH}
+          filters:
+            branches:
+              only:
+                - staging
+                - qa
+          # requires:
+          #   - test
+      - deploy: # <<< A job that will require manual approval
+          bucket-suffix: ''
+          filters:
+            branches:
+              only:
+                - master
+                - dev
+          requires:
+            - build

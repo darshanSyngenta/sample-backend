@@ -1,0 +1,71 @@
+#phone-form-control {
+  background-color: #f3f4f6;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #2f3031;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 5px 0 5px;
+  width: 100%;
+  height: 100%;
+}
+.react-tel-input {
+  height: 40px;
+  margin: 0 0;
+  color: #707374;
+}
+
+.react-tel-input .flag-dropdown {
+  outline: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  background-color: #e8eaed;
+  border: 0 !important;
+  border-radius: 3px 0 0 3px;
+}
+/*.react-tel-input:hover {*/
+/*    border: px solid #73DC78;*/
+/*    border-radius: 4px;*/
+/*}*/
+/*.react-tel-input:focus-within {*/
+/*    border: 1px solid #73DC78;*/
+/*    border-right-width: 1px !important;*/
+/*    outline: 0;*/
+/*    box-shadow: 0 0 0 2px rgba(0, 181, 216, 0.2);*/
+/*    border-radius: 4px;*/
+/*  }*/
+
+.react-tel-input-error {
+  border: 1px solid #ff4d4f;
+}
+.react-tel-input-error:hover {
+  border-color: 1px solid #ff4d4f;
+  border-radius: 4px;
+}
+.react-tel-input-error:focus-within {
+  border: 1px solid #ff4d4f;
+  border-right-width: 1px !important;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(245, 34, 45, 0.2);
+}
+
+.intersectionFieldTooltipError {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: red !important;
+  outline: none;
+}
+.content-container {
+  height: calc(100vh - 57px);
+  overflow-y: auto;
+  background-color: white;
+}

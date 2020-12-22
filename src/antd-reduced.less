@@ -1,0 +1,237 @@
+//@import '~antd/dist/antd';
+
+@import '~antd/lib/spin/style/index.less';
+@import '~antd/lib/icon/style/index';
+@import '~antd/lib/checkbox/style/index.less';
+@import '~antd/lib/radio/style/index.less';
+@import '~antd/lib/tooltip/style/index.less';
+@import '~antd/lib/dropdown/style/index';
+@import '~antd/lib/modal/style/index';
+@import '~antd/lib/menu/style/index';
+@import '~antd/lib/button/style/index';
+@import '~antd/lib/form/style/index.less';
+@import '~antd/lib/progress/style/index';
+@import '~antd/lib/input/style/index';
+@import '~antd/lib/layout/style/index';
+@import '~antd/lib/table/style/index';
+@import '~antd/lib/upload/style/index';
+@import '~antd/lib/message/style/index';
+@import '~antd/lib/pagination/style/index';
+@import '~antd/lib/breadcrumb/style/index';
+@import '~antd/lib/divider/style/index';
+@import '~antd/lib/card/style/index';
+@import '~antd/lib/switch/style/index';
+@import '~antd/lib/space/style/index';
+@import '~antd/lib/page-header/style/index';
+@import '~antd/lib/style/core/index';
+@import '~antd/lib/select/style/index';
+@import '~antd/lib/grid/style/index';
+@import '~antd/lib/date-picker/style/index';
+@import '~antd/lib/tabs/style/index';
+@import '~antd/lib/drawer/style/index';
+@import '~antd/lib/tree-select/style/index';
+@import '~antd/lib/collapse/style/index';
+@import '~antd/lib/steps/style/index';
+@import '~antd/lib/form/style/index';
+@import '~antd/lib/popover/style/index';
+
+@keyframes loadingCircle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+[ant-click-animating='true'],
+[ant-click-animating-without-extra-node='true'] {
+  position: relative;
+}
+
+.anticon-spin::before {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+.anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+
+// hacky tab menu for hoc
+.syngenta-tab-menu {
+  background: none;
+  color: #707374;
+}
+
+.syngenta-tab-menu .syngenta-ant-menu-item a {
+  color: #707374;
+  border-bottom: 2px solid transparent;
+}
+
+.syngenta-tab-menu > .syngenta-ant-menu-item-active a,
+.syngenta-tab-menu > .syngenta-ant-menu-item-selected a,
+.syngenta-tab-menu > .syngenta-ant-menu-item-active a:hover,
+.syngenta-tab-menu > .syngenta-ant-menu-item-selected a:hover {
+  color: #009933;
+}
+
+.syngenta-tab-menu > .syngenta-ant-menu-item-active,
+.syngenta-tab-menu > .syngenta-ant-menu-item-active:hover,
+.syngenta-tab-menu > .syngenta-ant-menu-item-selected,
+.syngenta-tab-menu > .syngenta-ant-menu-item-selected:hover {
+  border-bottom: 2px solid #009933 !important;
+}
+
+.syngenta-ant-radio-button-wrapper {
+  cursor: pointer;
+}
+
+.syngenta-ant-radio-button-wrapper-checked:not(.syngenta-ant-radio-button-wrapper-disabled):active {
+  color: #009933;
+  border-color: #009933;
+}
+
+.syngenta-ant-radio-button-wrapper-checked:not(.syngenta-ant-radio-button-wrapper-disabled):hover {
+  color: #009933;
+  border-color: #009933;
+}
+.syngenta-ant-radio-button-wrapper-checked:not(.syngenta-ant-radio-button-wrapper-disabled) {
+  color: #009933;
+  border-color: #009933;
+}
+.syngenta-ant-radio-button-wrapper:hover {
+  color: #009933;
+}
+.syngenta-ant-radio-button-wrapper-checked:not([class*=' syngenta-ant-radio-button-wrapper-disabled']).syngenta-ant-radio-button-wrapper:first-child {
+  border-right-color: #009933;
+}
+.syngenta-ant-radio-button-wrapper-checked:not(.syngenta-ant-radio-button-wrapper-disabled):first-child {
+  border-color: #009933;
+}
+.syngenta-ant-radio-button-wrapper-checked:not(.syngenta-ant-radio-button-wrapper-disabled)::before {
+  background-color: #009933;
+}
+.syngenta-ant-radio-button-wrapper-checked:not(.syngenta-ant-radio-button-wrapper-disabled):hover::before {
+  background-color: #009933;
+}
+
+// syngenta signup steps active color line override
+.syngenta-ant-steps-item-finish .syngenta-ant-steps-item-icon {
+  background: #0071cd;
+}
+.syngenta-ant-steps-item-finish .syngenta-ant-steps-item-icon > .syngenta-ant-steps-icon {
+  color: #fff !important;
+}
+.syngenta-ant-steps-item-process
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-icon {
+  background: #0071cd !important;
+}
+.syngenta-ant-steps-item-finish
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-content
+  > .syngenta-ant-steps-item-title::after {
+  background-color: #0071cd !important;
+}
+.syngenta-ant-steps-item-content::after {
+  position: absolute !important;
+  top: 16px !important;
+  left: 100% !important;
+  display: block !important;
+  width: 9999px !important;
+  height: 1px !important;
+  background: #868ca2 !important;
+  content: '' !important;
+}
+.syngenta-ant-steps-item-title::after {
+  content: none !important;
+}
+.syngenta-ant-steps-item-process
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-content::after {
+  background-color: #868ca2 !important;
+}
+.syngenta-ant-steps-item-finish
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-content::after {
+  background-color: #0071cd !important;
+}
+.syngenta-ant-steps-small .syngenta-ant-steps-item-content::after {
+  top: 12px !important;
+}
+.syngenta-ant-steps-item-content {
+  position: relative !important;
+  display: inline-block !important;
+  padding-right: 16px !important;
+  color: #2f3031 !important;
+  font-size: 16px !important;
+  line-height: 32px !important;
+}
+.syngenta-ant-steps-small .syngenta-ant-steps-item-content {
+  padding-right: 12px !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+}
+.syngenta-ant-steps-item-finish
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-content
+  > .syngenta-ant-steps-item-title::after {
+  background-color: transparent !important;
+}
+.syngenta-ant-steps-item-process
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-content
+  > .syngenta-ant-steps-item-title::after {
+  background-color: transparent !important;
+}
+
+.syngenta-ant-steps-vertical
+  > .syngenta-ant-steps-item
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-tail::after {
+  width: 100% !important;
+  height: 2px !important;
+}
+
+.syngenta-ant-steps-vertical
+  > .syngenta-ant-steps-item
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-tail {
+  width: 100% !important;
+  height: 2px !important;
+}
+
+.syngenta-ant-steps-vertical.syngenta-ant-steps-small
+  .syngenta-ant-steps-item-container
+  .syngenta-ant-steps-item-tail {
+  padding: 11px 0 6px !important;
+}
+
+.syngenta-ant-steps-vertical
+  > .syngenta-ant-steps-item:not(:last-child)
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-tail {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.syngenta-ant-steps-item-process
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-tail::after {
+  background-color: #868ca2 !important;
+}
+.syngenta-ant-steps-item-wait
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-tail::after {
+  background-color: #868ca2 !important;
+}
+.syngenta-ant-steps-small .syngenta-ant-steps-item-title {
+  padding-right: 0px !important;
+}
+.syngenta-ant-steps-item-process
+  > .syngenta-ant-steps-item-container
+  > .syngenta-ant-steps-item-content
+  > .syngenta-ant-steps-item-title {
+  color: #696f88 !important;
+  font-weight: 700 !important;
+}

@@ -1,0 +1,29 @@
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.tslintIntegration": true,
+  "prettier.eslintIntegration": true,
+  "eslint.enable": true,
+  "prettier.jsxSingleQuote": false,
+  "prettier.singleQuote": true,
+  "eslint.alwaysShowStatus": true,
+  "prettier.endOfLine": "lf",
+  "files.eol": "\n",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.rulers": [80, 120]
+}

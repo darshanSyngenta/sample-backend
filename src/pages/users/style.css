@@ -1,0 +1,178 @@
+/* Users - CSS  */
+.usersContainer {
+  margin-bottom: 12px;
+  height: inherit;
+  font-family: 'Rubik';
+}
+.clrFloat {
+  clear: both;
+}
+.padRt10 {
+  padding-right: 10px;
+}
+.padlt10 {
+  padding-left: 10px;
+}
+.usersHead {
+  width: 100%;
+}
+.usersHeadLeft {
+  float: left;
+  display: flex;
+}
+.circleBack {
+  background: #ffffff;
+  border: 1px solid #e8eaed;
+  color: #707374;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 8px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+.circleBack:hover {
+  background-color: #dddddd;
+}
+.usersHeadingAlign {
+  margin-top: 5px !important;
+}
+.newUserBtn {
+  border-radius: 4px;
+  margin-right: 15px !important;
+  background-color: #009933;
+  color: #ffffff;
+}
+.newUserBtn:hover,
+.newUserBtn:focus,
+.newUserBtn:active {
+  background: #00c241;
+  border: 1px solid #00c241;
+  color: #ffffff;
+}
+.usersContentBlock {
+  width: 100%;
+  margin-top: 5px;
+  min-height: 300px;
+}
+.inviteUserBtn {
+  border-radius: 4px;
+  margin-right: 15px !important;
+  background: #ffffff;
+  border: 1px solid #e8eaed;
+  color: #2f3031 !important;
+}
+.inviteUserBtn img {
+  margin-right: 5px;
+}
+.usersTabsBlock .syngenta-ant-tabs-tab {
+  margin-right: 30px !important;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.usersTabsBlock .syngenta-ant-tabs-tab-btn {
+  color: #707374;
+  font-size: 14px;
+}
+.usersTabsBlock .syngenta-ant-tabs-tab.syngenta-ant-tabs-tab-active .syngenta-ant-tabs-tab-btn {
+  color: #009933;
+}
+.usersTabsBlock .syngenta-ant-tabs-tab:hover {
+  color: #009933;
+}
+.usersTabsBlock .syngenta-ant-tabs-ink-bar {
+  background: #009933;
+}
+.usersTabsContent {
+  width: 100%;
+  min-height: 200px;
+  background: #ffffff;
+  border: 1px solid #e8eaed;
+  border-radius: 12px;
+}
+.usersTabsContentHead {
+  padding: 15px 15px;
+}
+.usersTabsSearch {
+  float: left;
+  margin-right: 20px;
+}
+.usersTabsSearchInput .syngenta-ant-input-affix-wrapper {
+  width: 280px;
+  height: 36px;
+  background: #f5f8fc;
+  border-radius: 4px;
+}
+.usersTabsSearchInput .syngenta-ant-input-affix-wrapper .syngenta-ant-input {
+  color: #8e9293;
+  font-size: 13px;
+  background: #f5f8fc;
+}
+.usersTabsSearchInput .syngenta-ant-input-prefix {
+  font-size: 16px;
+}
+.usersTabsAllOrg {
+  float: left;
+  margin-right: 20px;
+  width: 250px;
+}
+.usersTabsAllProd {
+  float: left;
+  margin-right: 20px;
+  width: 250px;
+}
+.syngenta-ant-select-tree-checkbox-checked .syngenta-ant-select-tree-checkbox-inner {
+  background-color: #009933;
+  border-color: #009933;
+}
+.syngenta-ant-select-tree-checkbox-indeterminate .syngenta-ant-select-tree-checkbox-inner::after {
+  background-color: #009933;
+}
+.usersTabsAllOrg .syngenta-ant-select-selector {
+  min-height: 36px;
+}
+.usersTabsAllProd .syngenta-ant-select-selector {
+  min-height: 36px;
+}
+.usersTabsCount {
+  float: right;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: right;
+  color: #2f3031;
+  padding: 10px 10px;
+}
+.usersTabsTableBlock {
+  margin-top: 10px;
+}
+.usersTabsTableBlock tbody td {
+  padding: 10px 10px !important;
+}
+.usersTabsTableBlock thead th:last-child {
+  padding-right: 20px !important;
+}
+.inviteUserBtn span {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 10px;
+}
+.newUserBtn:nth-child(1) {
+  width: 125px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 10px;
+}
+.detailsEditBlock {
+  /* width: 32px; */
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  color: #1890ff;
+}
+.userListActions {
+  float: right;
+}

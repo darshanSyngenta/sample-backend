@@ -1,0 +1,146 @@
+.login-form-bottom-section {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.login-other-option {
+  clear: both;
+  margin-top: 0px;
+  padding-top: 4px;
+}
+.login-checkbox {
+  flex: 1;
+  padding: 0 0 20px 0;
+  text-align: right;
+}
+.login-signin-button {
+  flex: 1;
+}
+.language-dropdown {
+  position: relative;
+  left: 0;
+  top: 2em;
+  width: 32vw;
+  /* bottom: 19px; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  /* line-height: 167%; */
+}
+.login-form-button {
+  margin: 32px 0 118px;
+}
+.render-btn {
+  text-align: right;
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .container-layout,
+  .render-btn {
+    padding: 0 !important;
+  }
+  .loginCreateAccountLinkDiv .container-layout {
+    text-align: center !important;
+  }
+  .RecoveryPasswordPageSection {
+    width: 30vw !important;
+  }
+}
+.dwaMTG {
+  display: inline;
+}
+@media (max-width: 575.98px) {
+  .dwaMTG {
+    margin-right: 0;
+  }
+}
+.syngenta-ant-form-input {
+  margin: 0px 0px 15px 0px !important;
+}
+.form-label {
+  margin-bottom: 10px !important;
+  color: #696f88;
+  text-align: left;
+}
+.signin-pwd-form {
+  padding: 0px;
+  background-color: transparent;
+}
+.signin-pwd-form:focus {
+  border: inherit !important;
+  box-shadow: none;
+}
+.signin-pwd-form:hover {
+  border: inherit !important;
+}
+.signin-pwd-form .syngenta-ant-input-suffix {
+  position: absolute;
+  color: #707374;
+  font-size: 18px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 90%;
+  top: 10%;
+  transform: none;
+  z-index: 0;
+  right: 12px;
+}
+.signin-pwd-form .syngenta-ant-input {
+  padding: 4px 11px !important;
+  margin: 0px !important;
+}
+.signin-pwd-form input {
+  margin: 0px;
+}
+.signin-pwd-form input:focus {
+  box-shadow: none;
+}
+.syngenta-ant-input {
+  border: 1px solid #c2c7d0 !important;
+}
+.syngenta-ant-input:focus {
+  border: 1px solid #25cce6;
+}
+.login-checkbox {
+  margin-top: 10px;
+}
+.login-checkbox a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #14803c;
+}
+@media (max-width: 575.98px) {
+  .login-checkbox a {
+    font-size: 11px;
+  }
+}
+.login-checkbox a:hover {
+  text-decoration: underline;
+}
+.account-create-link {
+  text-decoration: none !important;
+  font-size: 14px !important;
+  color: #14803c !important;
+}
+.account-create-link:hover {
+  text-decoration: underline !important;
+}
+.syngenta-ant-checkbox-input {
+  opacity: 1;
+}
+.Signin-title {
+  color: #000;
+  font-weight: 700;
+}
+.syngenta-ant-input-affix-wrapper {
+  border: inherit;
+}
+.syngenta-ant-form-item-explain.syngenta-ant-form-item-explain-error {
+  color: #ff4d4f;
+  margin-bottom: 10px;
+}
+.signin-pwd.signin-pwd-form {
+  margin-bottom: 15px;
+}

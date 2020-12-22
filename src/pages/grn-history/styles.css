@@ -1,0 +1,11 @@
+.flex-block-right {
+  display: flex;
+  float: right;
+}
+.flex-block-right span {
+  margin-right: 10px;
+}
+.syn-table-head tr th {
+  background-color: #14803c;
+  color: #fff;
+}

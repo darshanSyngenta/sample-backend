@@ -1,0 +1,90 @@
+export const AppConstants = {
+  TERM_AND_CONDITIONS: '',
+  DATE_FORMATS: {
+    YYYY_DASH_MM_DASH_DD_WITH_TIME: `yyyy-MM-dd'T'HH:mm:ss'Z'`,
+    MMM_SPACE_YEAR: `MMM yyyy`,
+    YYYY_DASH_MM_DASH_DD: 'YYYY-MM-DD',
+    YYYY_DASH_MM_DASH_DDTHH_COLON_mm_COLON_ss: 'YYYY-MM-DDTHH:mm:ss',
+    dddd_SPACE_DD_SPACE_MMM: 'dddd DD MMM',
+    DD_SPACE_MMM_SPACE_YEAR: `DD MMM YY`,
+  },
+  VALIDATIONS: {
+    EMAIL_REGEX: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+    MOBILE_DIGITS_LENGTH: 20,
+    MIN_MOBILE_DIGITS_LENGTH: 8,
+    NAME_MAX_LENGTH: 50,
+    COMMENTS_MAX_LENGTH: 100,
+    ZIP_CODE_MAX_LENGTH: 15,
+    CITY_MAX_LENGTH: 50,
+    COUNTRY_MAX_LENGTH: 25,
+    STATE_MAX_LENGTH: 50,
+    FIELD_NAME_MAX_LENGTH: 25,
+    EIN_MAX_LENGTH: 20,
+    ADDRESS_MAX_LENGTH: 100,
+    PASSWORD_REGEX: /^(?=.*\d)(?=.*[a-zA-Z]).{8,16}$/i,
+    SEASONS_NAME_LENGTH: 50,
+  },
+  EMAIL_MAX_LENGTH: 352,
+  OTP_MAX_LENGTH: 6,
+  MAX_PASSWORD_PROGRESS_LIMIT: 76,
+  PASSWORD_MAX_LENGTH: 50,
+  ADD_FIELDS: {
+    SEARCH_NAME_MAX_LENGTH: 25,
+  },
+  DATE_PERIOD: {
+    DATE_FORMAT: 'MMM DD, YYYY',
+    NINE: 9,
+    ONE: 1,
+    SIX: 6,
+    THREE_SIXTY_FIVE: 365,
+    THREE_ZERO: 30,
+    YEARS: 'years',
+    MONTHS: 'months',
+    DAYS: 'days',
+  },
+  CLOCK_FORMAT: {
+    FORMAT_12: 'FORMAT_12',
+    FORMAT_24: 'FORMAT_24',
+  },
+  DATE_FORMATS_SETTINGS: ['DD-MM-YYYY', 'DD-MM-YY', 'YYYY-MM-DD', 'MM-DD-YYYY', 'DD-MMM-YYYY'],
+  getTimeConstants: (t) => ({
+    [AppConstants.CLOCK_FORMAT.FORMAT_12]: [
+      '12:00 PM',
+      '03:00 PM',
+      '06:00 PM',
+      '09:00 PM',
+      '12:00 AM',
+      '03:00 AM',
+      '06:00 AM',
+      '09:00 AM',
+    ],
+    [AppConstants.CLOCK_FORMAT.FORMAT_24]: [
+      t('MIDDAY'),
+      '15:00',
+      '18:00',
+      '21:00',
+      t('MIDNIGHT'),
+      '03:00',
+      '06:00',
+      '09:00',
+    ],
+  }),
+  TASK_STATUS: (status, primaryStatus, t) => {
+    const mapping = {
+      PENDING: { text: t('Pending'), color: '#707374' },
+      DELAYED: { text: t('Delayed'), color: '#F74141' },
+    };
+    return mapping[status] || primaryStatus;
+  },
+  TASK_DEFAULT_STATUS_COLOR: (status) =>
+    ({
+      Planned: '#707374',
+      'In progress': '#EB8205',
+      Complete: '#2FB966',
+    }[status]),
+  GRAPH_DEFAULT_COLORS: ['#EB8205', '#F9C43D', '#00A0BE'],
+  O_AUTH: {
+    responseCode: 'code',
+    clientId: 'strix-ui',
+  },
+};

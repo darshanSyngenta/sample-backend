@@ -1,0 +1,16 @@
+phraseapp:
+  access_token: 638a6e620c7e1d5d066f68032f357dd28adb7125c6805615b1c65c805d5a8901
+  project_id: ea754bde56f318ee6cbb650b7f75f601
+  push:
+    sources:
+      - file: ./src/assets/locales/<locale_code>.json
+        params:
+          file_format: i18next
+          update_translations: true
+          convert_emoji: true
+  pull:
+    targets:
+      - file: ./src/assets/locales/<locale_code>.json
+        params:
+          file_format: i18next
+          convert_emoji: true

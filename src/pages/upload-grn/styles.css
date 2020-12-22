@@ -1,0 +1,16 @@
+.lg-w-75 {
+  width: 75%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .lg-w-75 {
+    width: 100%;
+  }
+}
+.w-100 {
+  width: 100%;
+}
+.drag-and-drop .syngenta-ant-upload {
+  width: 100%;
+  height: 70px;
+}

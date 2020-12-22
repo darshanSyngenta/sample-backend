@@ -1,0 +1,410 @@
+/* Products - CSS */
+.productsContainer {
+  margin-bottom: 12px;
+  height: inherit;
+}
+.clrFloat {
+  clear: both;
+}
+.productsHeadingAlign {
+  float: left;
+  padding-right: 15px;
+  padding-top: 9px;
+  font-weight: 500;
+  color: #2f3031;
+}
+.productSubHeadingInputSearch {
+  font-size: 14px;
+  color: #2f3031;
+  float: left;
+}
+.productSubHeadingInputSearch .syngenta-ant-input-affix-wrapper {
+  width: 280px;
+  height: 36px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.productSubHeadingInputSearch .syngenta-ant-input-affix-wrapper .syngenta-ant-input {
+  color: #8e9293;
+  font-size: 13px;
+  background: #ffffff;
+}
+.productSubHeadingInputSearch .syngenta-ant-input-prefix {
+  font-size: 16px;
+}
+.productsContentData {
+  width: 100%;
+  padding-left: 25px;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+.productsThumbnail {
+  width: 380px;
+  height: 192px;
+  background: #14803c;
+  box-shadow: 0px 6px 16px rgba(47, 48, 49, 0.25);
+  border-radius: 16px;
+  margin-top: 20px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  float: left;
+}
+.productsInnerThumbnail {
+  width: 100%;
+  height: 145px;
+  background: #ffffff;
+  box-shadow: 0px 6px 16px rgba(47, 48, 49, 0.25);
+  border-radius: 16px;
+  padding: 15px;
+  position: relative;
+  z-index: 5;
+}
+.InnerLeftBlock {
+  float: left;
+  width: 27%;
+}
+.innerLeafBlock {
+  width: 85px;
+  height: 115px;
+  background: #00004b;
+  border-radius: 16px;
+  text-align: center;
+}
+.innerLeafImage {
+  padding-top: 30px;
+}
+.innerRightBlock {
+  float: left;
+  width: 73%;
+}
+.innerThumbnailHeading {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2f3031;
+  padding: 7px 0px 3px 0px;
+}
+.productDataBlock {
+  padding-bottom: 5px;
+  font-size: 13px;
+  color: #707374;
+}
+.greenCircle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #14803c;
+  float: left;
+  margin-top: 7px;
+  margin-right: 7px;
+}
+.technologiesIconBlock {
+  margin-left: 10px;
+}
+.technologiesIcon {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: #515253;
+  border-radius: 50%;
+  text-align: center;
+}
+.technologiesIcon img {
+  margin-top: -4px;
+}
+.outerThumbData {
+  width: 100%;
+  color: #ffffff;
+  font-size: 13px;
+  position: relative;
+  z-index: 2;
+  height: 65px;
+  margin-top: -20px;
+}
+.outerThumbData a {
+  color: white;
+}
+.planGuide {
+  width: 50%;
+  float: left;
+  text-align: center;
+  position: absolute;
+}
+.planGuideData {
+  margin-top: 20px;
+  padding: 12px 0px;
+}
+.planGuide span {
+  padding-left: 7px;
+  color: #ffffff;
+}
+.planIcons {
+  border-right: 1px solid #0c612c;
+}
+.contract {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+.contractData {
+  margin-top: 20px;
+  padding: 12px 0px;
+}
+.contract span {
+  padding-left: 7px;
+  color: #ffffff;
+}
+.planGuide:hover {
+  background-color: #19a04b;
+  border-bottom-left-radius: 16px;
+  cursor: pointer;
+}
+.contract:hover {
+  background-color: #19a04b;
+  border-bottom-right-radius: 16px;
+  cursor: pointer;
+}
+.product-card .syngenta-ant-card-body {
+  padding: 10px;
+  min-height: 300px;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card .syngenta-ant-card-body:hover button {
+  background: #14803c;
+  color: #ffffff;
+}
+.product-card .syngenta-ant-row {
+  display: flex;
+}
+.product-card .syngenta-ant-card {
+  border-radius: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+.product-card .syngenta-ant-card:hover {
+  border: 1px solid #14803c;
+}
+.product-card .site-card-border-less-wrapper {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .product-card .site-card-border-less-wrapper {
+    width: 350px;
+  }
+}
+.product-card .syngenta-ant-card-head {
+  background: #14803c;
+  color: #ffffff;
+}
+.product-card .syngenta-ant-card-extra {
+  color: #ffffff;
+  padding: 11px 0;
+}
+.product-card .syngenta-ant-card-head-title {
+  padding: 11px 0;
+}
+.product-card button {
+  margin-top: auto;
+  background: transparent;
+  color: #14803c;
+  font-weight: 600;
+}
+.product-card button:hover {
+  background: #14803c;
+}
+.product-card button:focus {
+  background: #14803c;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.bold-text {
+  font-weight: 600;
+}
+.md-size-text {
+  font-size: 16px;
+}
+.lg-size-text {
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .lg-size-text {
+    font-size: 16px;
+  }
+}
+.sm-size-text {
+  font-size: 14px;
+}
+.card-body-inside {
+  border-width: 1px;
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card-body-inside .card-image-text {
+  margin-bottom: 15px;
+}
+.card-body-inside .card-image-text h4 {
+  margin-bottom: 0;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+.card-title {
+  margin: 20px 0px 50px 0px;
+}
+.productCard {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.disableCard {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  cursor: none;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.productTitle {
+  text-align: center;
+}
+.product-input {
+  margin-bottom: 15px;
+}
+.product-form {
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.product-terms {
+  width: 100%;
+  height: 300px;
+  background: #f3f4f6;
+  overflow: auto;
+  padding: 25px;
+  margin: 20px 0px;
+  border-radius: 2%;
+}
+.product-terms h4 {
+  color: #696f88;
+  font-size: 18px;
+  font-weight: 700;
+}
+.product-terms h3 {
+  color: #696f88;
+  font-size: 16px;
+  font-weight: 700;
+}
+.product-terms p {
+  color: #696f88;
+  font-size: 12px;
+}
+.product-terms::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  height: 50px;
+  -webkit-box-shadow: inset 0 3px 2px 6px #c2c7d0;
+}
+.product-terms::-webkit-scrollbar {
+  width: 4px;
+}
+.product-links ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0px;
+}
+.product-links ul li {
+  font-size: 16px;
+}
+.product-links ul li a {
+  color: #14803c;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .product-links ul li a {
+    font-size: 12px;
+  }
+}
+.product-contractAgreement-form .syngenta-ant-upload-select-picture-card {
+  width: 100%;
+  height: 40px;
+  border: 1px dashed #c2c7d0;
+}
+.product-uploadTxt {
+  color: #14803c;
+  font-size: 14px;
+}
+.productIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px;
+}
+.edit {
+  background-color: #14803c;
+}
+.cancel {
+  background-color: #cf3537;
+}
+.form-bg {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+.synegenta-inner-page-form label {
+  margin-bottom: 3px !important;
+  color: #696f88 !important;
+  font-size: 14px !important;
+}
+.synegenta-inner-page-form input {
+  border: 1px solid #c2c7d0 !important;
+  min-height: 40px;
+  border-radius: 5px;
+  background: #ffffff !important;
+}
+@media (max-width: 768px) {
+  .synegenta-inner-page-form .syngenta-ant-form-item {
+    margin-bottom: 7px;
+  }
+}
+.synegenta-inner-page-form .syngenta-ant-form-item:last-child {
+  margin-bottom: 0px;
+}
+@media (max-width: 768px) {
+  .bank-form-btn button {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+.tin-form-btn button {
+  margin-right: 10px;
+  margin-left: 0px;
+}
+@media (max-width: 768px) {
+  .tin-form-btn button {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+.justify-center {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .justify-center {
+    display: block;
+  }
+}
